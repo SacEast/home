@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skeptron Alumni Cebu East</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Skeptron Alumni Logo">
+    <h3>Skeptron Alumni Cebu - East</h3>
+  </div>
+  <nav>
+	 <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="events.html">Events</a>
+    <a href="join.html">Join</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brigada Skwela Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+  <section class="gallery">
+    <h1>Brigada Skwela – Full Gallery</h1>
+    <div class="gallery-grid" id="brigada-gallery"></div>
+  </section>
+
+  <script>
+    const brigadaImages = [
+      "skwela1.jpg","skwela2.jpg","skwela3.jpg","skwela4.jpg","skwela5.jpg"
+    ];
+    const brigadaContainer = document.getElementById("brigada-gallery");
+    brigadaImages.forEach(img => {
+      brigadaContainer.innerHTML += `
+        <a href="images/brigada-skwela/${img}" data-lightbox="brigada">
+          <img src="images/brigada-skwela/${img}" alt="${img}">
+        </a>`;
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
